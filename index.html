@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced To Do App</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+<main class="app">
+
+    <header class="header">
+        <h1>📝 Advanced Todo App</h1>
+        <p>Organize your daily tasks efficiently.</p>
+    </header>
+
+    <section class="task-form">
+
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter your task..."
+    >
+
+    <select id="priority">
+
+        <option value="High">🔥 High</option>
+
+        <option value="Medium">🟡 Medium</option>
+
+        <option value="Low">🟢 Low</option>
+
+    </select>
+
+    <select id="category">
+
+        <option value="Work">💼 Work</option>
+
+        <option value="Study">📚 Study</option>
+
+        <option value="Personal">🏠 Personal</option>
+
+        <option value="Shopping">🛒 Shopping</option>
+
+    </select>
+
+    <input
+        type="date"
+        id="dueDate"
+    >
+
+    <button id="addTaskBtn">
+        + Add Task
+    </button>
+
+</section>
+
+    <section class="search-filter">
+
+    <input
+        type="text"
+        id="searchTask"
+        placeholder="🔍 Search task..."
+    >
+
+    <select id="filterTask">
+
+        <option value="all">All Tasks</option>
+
+        <option value="active">Active</option>
+
+        <option value="completed">Completed</option>
+
+    </select>
+
+    <select id="sortTask">
+
+        <option value="date">Sort by Date</option>
+
+        <option value="priority">Sort by Priority</option>
+
+        <option value="alphabet">Sort A-Z</option>
+
+    </select>
+
+</section>
+
+    <section class="stats">
+
+    <div class="stat-card">
+        <h2 id="totalTasks">0</h2>
+        <p>Total Tasks</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="completedTasks">0</h2>
+        <p>Completed</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="remainingTasks">0</h2>
+        <p>Remaining</p>
+    </div>
+
+</section>
+
+    <section class="progress-section">
+
+    <div class="progress-header">
+
+        <h3>Task Progress</h3>
+
+        <span id="progressText">0%</span>
+
+    </div>
+
+    <div class="progress-bar">
+
+        <div class="progress-fill" id="progressFill"></div>
+
+    </div>
+
+</section>
+
+    <section class="task-list">
+
+    <div class="task-list-header">
+
+        <h2>📋 My Tasks</h2>
+
+        <span id="taskCount">0 Tasks</span>
+
+    </div>
+
+    <div id="taskContainer">
+
+        <div class="empty-state">
+
+            <div class="empty-icon">📝</div>
+
+            <h3>No Tasks Yet</h3>
+
+            <p>Add your first task to get started!</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
